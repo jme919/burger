@@ -18,5 +18,5 @@ var burgersFun = {
       cb(res);
     });
  
-// Export the database functions for the controller Controller.js).
+// Export the database functions 
 module.exports = burgersFun;
