@@ -1,0 +1,19 @@
+.box{
+	background-color:#ABA7A7;
+	text-align: center;
+	padding: 25px;
+}
+
+#buns{
+	height: 200px;
+	width: 250px;
+}
+
+#burgerName{
+	margin-top: 20px;
+}
+
+h2, h1{
+	text-decoration: underline;
+
+}

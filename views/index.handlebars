@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<h1>Burgers</h1>
 
 
-<div>
+<div class="container">
+<div class = "col-md-8 offset-2 box">
+  <h1>Burgers</h1>
+  <img id="buns" src="./assets/img/burgerbun.jpg">
 <h2>Burgers that have not been devoured</h2>
 
 <ul>
@@ -21,11 +23,11 @@
 
 </div>
 
-<div>
+<div class="col-md-8 offset-2 box"> 
 <form class="create-form addBurger">
 
   <div class="form-group">
-    <input type="text" name="name" class="form-control" id = "burgerName" placeholder="Burger Name"></input>
+    <input  type="text" name="name" class="form-control" id = "burgerName" placeholder="Burger Name"></input>
 
   </div>
 
@@ -35,8 +37,8 @@
 
 
 
-<div>
-<h2>I devoured these!</h2>
+<div class= "col-md-8 offset-2 box">
+<h2>Burgers that have been devoured</h2>
 
 <ul>
   {{#each burgers}}
@@ -47,4 +49,5 @@
     {{/if}}
   {{/each}}
 </ul>
+</div>
 </div>

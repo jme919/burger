@@ -10,7 +10,7 @@ var connection = require("../config/connection.js");
 var orm = {
 //display all
  
-  dislplayAll: function(input, cb){
+  displayAll: function(input, cb){
     var query = "SELECT * FROM " + input;
     connection.query(query, function(err, result){
       if(err) throw err;

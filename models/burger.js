@@ -2,7 +2,7 @@
 var orm = require("../config/orm.js");
 
 var burgersFun = {
-  dislplayAll: function(cb) {
+  displayAll: function(cb) {
     orm.displayAll("burgers", function(res) {
       cb(res);
     });
@@ -17,6 +17,8 @@ var burgersFun = {
     orm.updateDev(dev, id,  function(res) {
       cb(res);
     });
+  }
+};
  
 // Export the database functions 
 module.exports = burgersFun;
