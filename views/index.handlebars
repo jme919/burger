@@ -8,12 +8,12 @@
   <img id="buns" src="./assets/img/burgerbun.jpg">
 <h2>Burgers that have not been devoured</h2>
 
-<ul>
+<ul class="ul">
   {{#each burgers}}
     {{#unless devoured}}
-     <li>
+     <li class="li">
        <p>
-        {{burger_name}}
+        {{burger_name}} &emsp; <button data-burgerid="{{id}}" class="btn btn-primary devourBurger">Devour</button>
       </p>
      </li>
 

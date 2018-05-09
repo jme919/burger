@@ -1,5 +1,5 @@
 $(function(){
-  $(".addBurger").on("submit", function(event){
+  $(".create-form").on("submit", function(event){
     event.preventDefault();
     var newBurger = {
       burger_name: $("#burgerName").val().trim()
@@ -12,10 +12,13 @@ $(function(){
     });
   });
   $(".devourBurger").on("click", function(event){
-    var id = $(this).data("id")
+    var id = $(this).data("burgerid");
+    var updatedBurger = {
+      devoured: 1
+    }
     $.ajax("/api/burgers/" + id, {
       type: "PUT",
-      data: {devoured: 1}
+      data: updatedBurger
     }).then(function(){
       location.reload();
     });

@@ -33,10 +33,10 @@ var orm = {
   },
   //change burger to devoured
 
-  updateDev: function(dev, id, cb){
+  updateDev: function(devoured, id, cb){
     connection.query("UPDATE burgers SET ? WHERE ?", [
     {
-      dev : devoured
+      devoured : devoured
     },
     {
       id : id

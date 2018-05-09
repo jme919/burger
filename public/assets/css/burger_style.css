@@ -18,6 +18,10 @@ h2, h1{
 
 }
 
-body{
+body, .body{
 	background-color: #000000;
+}
+
+li, ul, .ul, .li{
+	text-decoration: none;
 }
